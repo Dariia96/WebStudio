@@ -1,0 +1,75 @@
+@media  screen and (min-width: 480px) {
+.container{
+    max-width: 448px;
+}
+
+/*----------------------------------------------MOB-MENU-----------------------------------------------*/
+.mob-menu .container {
+   
+    padding-left: 40px;}
+
+.menu-contacts-wrap {
+        max-width: 337px;
+        
+    }
+
+
+.header-tel{
+    font-size: 32px;
+        line-height: 1.25;
+}
+
+
+/*--------------------------------HERO------------------------------------*/
+.hero-title {
+    font-size: 36px;
+}
+
+.hero {
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-768.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-768-2x.jpg);
+    }
+}
+
+/*--------------------------CUSTOMERS-------------------------------------*/
+
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
+    justify-content: center;
+    max-width: 448px;
+}
+
+.customers-item {
+    flex-basis: calc((100% - 16px ) / 2);
+    height: 88px;
+    width: 190px;
+    margin-bottom:0;
+}
+/*--------------------------------------------------FOOTER--------------------------------------*/
+.subscribe-input {
+    min-width: 398px;
+}
+/*-----------------------------------------MODAL-------------------------------------*/
+.modal{
+    width: 392px;
+}
+.modal-input {
+    min-width: 360px;
+}
+.modal-comment{
+    min-width: 360px;
+}
+
+}
