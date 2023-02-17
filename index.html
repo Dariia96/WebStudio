@@ -35,20 +35,21 @@
                     <li><a href="tel:+110001111111" class="header-tel link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <button type="button" class="menu-open" data-menu-open>
+            <button type="button" class="js-open-menu">
                 <svg class="open-menu-icon" width="32px" height="22px">
                     <use href="./images/icons.svg#icon-menu-hamburger"></use>
                 </svg>
             </button>
         </div>
-        <div class="mob-menu is-hidden" data-menu>
+        <div class="js-menu-container is-hidden">
             <div class="container">
                 <div>
-                    <button type="button" class="menu-close"  data-menu-close>
+                    <button type="button" class="js-close-menu">
                         <svg class="close-icon" width="8px" height="8px">
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
+                    <div class="mob-menu-wrap">
                     <nav class="menu-navigation">
                         <ul class="mob-menu-list list">
                             <li class="menu-item"><a href="./index.html" class="menu-link link ">Studio</a></li>
@@ -95,6 +96,7 @@
                             </li>
                         </ul>
                     </div>
+                </div>
                 </div>
             </div>
         </div>     
@@ -412,10 +414,10 @@
                     </li>
                 </ul>
             </div>
-            <form action="" class="subscribe-form">
+            <form class="subscribe-form">
                 <p class="footer-call">Subscribe</p>                
                 <div class="subscribe-wrap">
-                    <label for=""><input type="email" name="user-email" class="subscribe-input" placeholder="E-mail"></label>
+                    <label><input type="email" name="user-email" class="subscribe-input" placeholder="E-mail"></label>
                         <button type="submit" class="subscribe-btn">Subscribe
                             <svg class="airplane-icon" width="24px" height="24px">
                                 <use href="./images/icons.svg#icon-airplane"></use>
@@ -433,7 +435,7 @@
                 </svg>
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
-            <form action="" class="modal-form">                    
+            <form  class="modal-form">                    
                     <label for="name" class="modal-label"> 
                         <span> Name </span>
                     </label>
@@ -456,7 +458,7 @@
                         <span>Email</span>
                     </label>
                     <span class="modal-input-wrap">
-                        <input type="email" id="email" name="user-email"class="modal-input">
+                        <input type="email" id="email" name="user-email" class="modal-input">
                         <svg class="modal-icon" width="18px" height="24px">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
@@ -466,7 +468,7 @@
                     </label>
                     <textarea name="comment" id="comment" class="modal-comment" placeholder="Text input"></textarea>
                     <div class="modal-field">
-                        <input type="checkbox" name="modal-policy" id="modal-policy" class="modal-checkbox visually-hidden" value="true"required>
+                        <input type="checkbox" name="modal-policy" id="modal-policy" class="modal-checkbox visually-hidden" value="true" required>
                         <label for="modal-policy" class="privacy-label">
                             <span class="privacy-icon-wrap">
                                 <svg class="privacy-icon" width="10px" height="8px">
@@ -482,8 +484,10 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     
 </body>
 </html>

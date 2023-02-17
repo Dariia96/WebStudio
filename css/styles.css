@@ -105,7 +105,7 @@ img{
 .header-adresses{
    display: none;
 }
- .menu-open {
+ .js-open-menu{
     display: flex;
         width: 32px;
         height:22px;
@@ -127,7 +127,7 @@ img{
  }
 
 /*----------------------------------------------MOB-MENU-----------------------------------------------*/
-.mob-menu  {
+.js-menu-container  {
     position: fixed;
         top: 0;
         z-index: 1;
@@ -138,20 +138,27 @@ img{
     
 
 }
+.mob-menu-wrap{
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+    
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 
-.is-hidden {}
-
-.mob-menu .container {    
+.js-menu-container .container {    
+    
 
     padding-top: 24px;
     padding-bottom: 40px;
    
 }
 
-.mob-menu>.container {
-   
-}
-.menu-close {
+
+.js-close-menu {
     display: flex;
         width: 24px;
         height: 24px;
@@ -166,17 +173,14 @@ img{
     
 }
 
-.close-icon {}
 
 
-.menu-close:hover,
-.menu-close:focus {
+
+.js-close-menu:hover,
+.js-close-menu:focus {
     background-color: var(--hero-btn-color);
 }
-.menu-navigation {
-    margin-bottom: auto;
-    
-}
+.menu-navigation {}
 
 .mob-menu-list {
     max-width:100%;
